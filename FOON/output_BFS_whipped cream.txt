@@ -1,0 +1,187 @@
+//
+O	measuring cup
+S	empty
+O	carton
+S	contains	{milk}
+O	milk
+S	liquid
+S	in	[carton]
+M	measure
+O	measuring cup
+S	contains	{milk}
+O	milk
+S	liquid
+S	in	[measuring cup]
+//
+O	mixer
+S	off (ready)
+S	in	[mixing bowl]
+O	mixing bowl
+S	empty
+S	in	[mixer]
+O	packet
+S	opened
+S	contains	{cream cheese}
+O	cream cheese
+S	block
+S	in	[packet]
+M	pick-and-place
+O	mixing bowl
+S	contains	{cream cheese}
+S	in	[mixer]
+O	cream cheese
+S	block
+S	in	[mixing bowl]
+//
+O	mixer
+S	on
+S	in	[mixing bowl]
+O	can
+S	contains	{condensed milk}
+O	condensed milk
+S	thick liquid
+S	in	[can]
+O	mixing bowl
+S	contains	{cream cheese}
+S	in	[mixer]
+O	spatula
+M	pour
+O	mixing bowl
+S	contains	{condensed milk,cream cheese}
+S	in	[mixer]
+O	condensed milk
+S	thick liquid
+S	in	[mixing bowl]
+//
+O	mixer
+S	on
+S	in	[mixing bowl]
+O	packet
+S	opened
+S	contains	{pudding mix}
+O	pudding mix
+S	powder
+S	in	[packet]
+O	mixing bowl
+S	contains	{condensed milk,cream cheese,pudding mix}
+S	in	[mixer]
+M	pour and blend
+O	mixing bowl
+S	contains	{condensed milk,cream cheese,pudding mix}
+S	in	[mixer]
+O	pudding mix
+S	powder
+S	in	[mixing bowl]
+//
+O	mixer
+S	on
+S	in	[mixing bowl]
+O	mixing bowl
+S	contains	{condensed milk,cream cheese,pudding mix}
+S	in	[mixer]
+O	measuring cup
+S	contains	{milk}
+O	milk
+S	liquid
+S	in	[measuring cup]
+M	pour and blend
+O	mixing bowl
+S	contains	{condensed milk,cream cheese,milk,pudding mix}
+S	in	[mixer]
+O	milk
+S	liquid
+S	in	[mixing bowl]
+//
+O	mixer
+S	on
+S	in	[mixing bowl]
+O	mixing bowl
+S	contains	{cream cheese}
+S	in	[mixer]
+O	cream cheese
+S	block
+S	in	[mixing bowl]
+M	blend
+O	cream cheese
+S	softened
+S	in	[mixing bowl]
+//
+O	mixer
+S	on
+S	in	[mixing bowl]
+O	mixing bowl
+S	contains	{condensed milk,cream cheese,milk,pudding mix}
+S	in	[mixer]
+O	mixing bowl
+S	contains	{vanilla extract}
+O	vanilla extract
+S	liquid
+S	in	[mixing bowl]
+M	pour
+O	mixing bowl
+S	contains	{condensed milk,cream cheese,milk,pudding mix,vanilla extract}
+S	in	[mixer]
+O	vanilla extract
+S	liquid
+S	in	[mixing bowl]
+//
+O	mixer
+S	on
+S	in	[mixing bowl]
+O	mixing bowl
+S	contains	{condensed milk,cream cheese,milk,pudding mix,vanilla extract}
+S	in	[mixer]
+O	cream cheese
+S	softened
+S	in	[mixing bowl]
+O	vanilla extract
+S	liquid
+S	in	[mixing bowl]
+O	milk
+S	liquid
+S	in	[mixing bowl]
+O	pudding mix
+S	powder
+S	in	[mixing bowl]
+O	condensed milk
+S	thick liquid
+S	in	[mixing bowl]
+M	blend
+O	mixing bowl
+S	contains	{pudding}
+S	in	[mixer]
+O	pudding
+S	mixed
+S	thick liquid
+S	contains	{condensed milk,cream cheese,milk,pudding mix,vanilla extract}
+S	in	[mixing bowl]
+//
+O	mixer
+S	off
+S	in	[mixing bowl]
+O	mixing bowl
+S	contains	{pudding}
+S	in	[mixer]
+M	detach
+O	mixer
+S	off
+O	mixing bowl
+S	contains	{pudding}
+//
+O	mixing bowl
+S	contains	{pudding}
+O	jar
+S	contains	{whipped cream}
+O	whipped cream
+S	whipped
+S	creamy
+S	in	[jar]
+O	spatula
+M	pour
+O	mixing bowl
+S	contains	{pudding,whipped cream}
+O	whipped cream
+S	whipped
+S	creamy
+S	in	[mixing bowl]
+//

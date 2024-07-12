@@ -1,0 +1,113 @@
+//
+O	bowl
+S	empty
+O	packet
+S	contains	{chocolate chip}
+O	chocolate chip
+S	pieces
+S	in	[packet]
+M	pour
+O	bowl
+S	contains	{chocolate chip}
+O	chocolate chip
+S	pieces
+S	in	[bowl]
+//
+O	pot
+S	hot
+S	contains	{water}
+S	in	[stove]
+O	double boiler
+S	empty
+M	pick-and-place
+O	pot
+S	hot
+S	contains	{water}
+S	in	[double boiler]
+O	double boiler
+S	empty
+S	in	[pot]
+//
+O	pot
+S	hot
+S	contains	{water}
+S	in	[double boiler]
+O	double boiler
+S	empty
+S	in	[pot]
+O	bowl
+S	contains	{chocolate chip}
+O	chocolate chip
+S	pieces
+S	in	[bowl]
+M	pour
+O	double boiler
+S	contains	{chocolate chip}
+S	in	[pot]
+O	chocolate chip
+S	pieces
+S	in	[double boiler]
+//
+O	double boiler
+S	contains	{chocolate chip}
+S	in	[pot]
+O	pot
+S	hot
+S	contains	{water}
+S	in	[double boiler]
+M	remove
+O	pot
+S	hot
+S	contains	{water}
+S	in	[stove]
+O	double boiler
+S	contains	{chocolate chip}
+//
+O	pot
+S	hot
+S	contains	{water}
+S	in	[stove]
+O	shaker
+S	contains	{salt}
+O	salt
+S	granulated
+S	in	[shaker]
+M	sprinkle
+O	pot
+S	hot
+S	contains	{salt,water}
+S	in	[stove]
+O	salt
+S	granulated
+S	in	[pot]
+//
+O	pot
+S	hot
+S	contains	{salt,water}
+S	in	[stove]
+O	jar
+S	contains	{macaroni}
+O	macaroni
+S	raw
+S	in	[jar]
+M	pour
+O	pot
+S	hot
+S	contains	{macaroni,salt,water}
+S	in	[stove]
+O	macaroni
+S	raw
+S	in	[pot]
+//
+O	pot
+S	hot
+S	contains	{macaroni,salt,water}
+S	in	[stove]
+O	macaroni
+S	raw
+S	in	[pot]
+M	cook
+O	macaroni
+S	cooked
+S	in	[pot]
+//

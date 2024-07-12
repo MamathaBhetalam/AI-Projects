@@ -1,0 +1,99 @@
+//
+O	faucet
+S	off
+M	turn on
+O	faucet
+S	on
+O	water
+S	from faucet
+//
+O	faucet
+S	on
+O	water
+S	from faucet
+O	measuring cup
+S	empty
+M	fill
+O	measuring cup
+S	contains	{water}
+O	water
+S	in	[measuring cup]
+//
+O	pot
+S	heated
+S	in	[stove]
+O	measuring cup
+S	contains	{water}
+O	water
+S	in	[measuring cup]
+M	pour
+O	pot
+S	contains	{water}
+S	in	[stove]
+O	water
+S	in	[pot]
+//
+O	pot
+S	contains	{water}
+S	in	[stove]
+O	stove
+S	on
+S	in	[pot]
+M	boil
+O	pot
+S	hot
+S	contains	{water}
+S	in	[stove]
+O	water
+S	liquid
+S	boiling
+S	in	[pot]
+//
+O	pot
+S	hot
+S	contains	{water}
+S	in	[stove]
+O	shaker
+S	contains	{salt}
+O	salt
+S	granulated
+S	in	[shaker]
+M	sprinkle
+O	pot
+S	hot
+S	contains	{salt,water}
+S	in	[stove]
+O	salt
+S	granulated
+S	in	[pot]
+//
+O	pot
+S	hot
+S	contains	{salt,water}
+S	in	[stove]
+O	jar
+S	contains	{macaroni}
+O	macaroni
+S	raw
+S	in	[jar]
+M	pour
+O	pot
+S	hot
+S	contains	{macaroni,salt,water}
+S	in	[stove]
+O	macaroni
+S	raw
+S	in	[pot]
+//
+O	pot
+S	hot
+S	contains	{macaroni,salt,water}
+S	in	[stove]
+O	macaroni
+S	raw
+S	in	[pot]
+M	cook
+O	macaroni
+S	cooked
+S	in	[pot]
+//

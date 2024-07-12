@@ -1,0 +1,378 @@
+//
+O	onion
+S	whole
+S	unpeeled
+M	peel
+O	onion
+S	whole
+S	peeled
+//
+O	cucumber
+S	whole
+O	peeler
+M	peel
+O	cucumber
+S	whole
+S	peeled
+//
+O	tomato
+S	whole
+S	in	[cutting board]
+O	knife
+M	slice
+O	tomato
+S	sliced
+S	in	[cutting board]
+//
+O	cutting board
+S	empty
+O	onion
+S	whole
+S	peeled
+M	pick-and-place
+O	onion
+S	whole
+S	peeled
+S	in	[cutting board]
+//
+O	cutting board
+S	empty
+O	cucumber
+S	whole
+S	peeled
+M	pick-and-place
+O	cutting board
+S	contains	{cucumber}
+O	cucumber
+S	whole
+S	peeled
+S	in	[cutting board]
+//
+O	green pepper
+S	whole
+S	in	[cutting board]
+O	knife
+M	core
+O	green pepper
+S	cored
+S	in	[cutting board]
+//
+O	sweet pepper
+S	whole
+S	in	[cutting board]
+O	knife
+M	core
+O	sweet pepper
+S	cored
+S	in	[cutting board]
+//
+O	packet
+S	contains	{flour}
+O	flour
+S	powder
+S	in	[packet]
+O	mixing bowl
+S	empty
+M	pour
+O	mixing bowl
+S	contains	{flour}
+O	flour
+S	powder
+S	in	[mixing bowl]
+//
+O	bowl
+S	contains	{black olive}
+O	black olive
+S	whole
+S	in	[bowl]
+O	mixing bowl
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano}
+M	pour
+O	mixing bowl
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive}
+O	black olive
+S	whole
+S	in	[mixing bowl]
+//
+O	tomato
+S	sliced
+S	in	[cutting board]
+O	knife
+M	dice
+O	tomato
+S	cubed
+S	in	[cutting board]
+//
+O	onion
+S	whole
+S	peeled
+S	in	[cutting board]
+O	knife
+M	slice
+O	onion
+S	sliced
+S	in	[cutting board]
+//
+O	cucumber
+S	whole
+S	peeled
+S	in	[cutting board]
+O	knife
+M	dice
+O	cucumber
+S	diced
+S	in	[cutting board]
+//
+O	green pepper
+S	cored
+S	in	[cutting board]
+O	knife
+M	dice
+O	green pepper
+S	cubed
+S	in	[cutting board]
+//
+O	sweet pepper
+S	cored
+S	in	[cutting board]
+O	knife
+M	dice
+O	sweet pepper
+S	cubed
+S	in	[cutting board]
+//
+O	mixing bowl
+S	contains	{flour}
+O	bowl
+S	contains	{salt}
+O	salt
+S	granulated
+S	in	[bowl]
+M	pour
+O	mixing bowl
+S	contains	{flour,salt}
+O	salt
+S	granulated
+S	in	[mixing bowl]
+//
+O	mixing bowl
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive}
+O	grinder
+S	contains	{salt}
+O	salt
+S	pieces
+S	in	[grinder]
+M	grind
+O	mixing bowl
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt}
+O	salt
+S	granulated
+S	in	[mixing bowl]
+//
+O	cutting board
+S	contains	{tomato}
+O	tomato
+S	cubed
+S	in	[cutting board]
+O	mixing bowl
+S	empty
+M	pick-and-place
+O	mixing bowl
+S	contains	{tomato}
+O	tomato
+S	cubed
+S	in	[mixing bowl]
+//
+O	onion
+S	sliced
+S	in	[cutting board]
+O	mixing bowl
+S	contains	{tomato}
+O	tomato
+S	cubed
+S	in	[mixing bowl]
+M	pick-and-place
+O	mixing bowl
+S	contains	{tomato,onion}
+O	onion
+S	sliced
+S	in	[mixing bowl]
+//
+O	cutting board
+S	contains	{cucumber}
+O	cucumber
+S	diced
+S	in	[cutting board]
+O	mixing bowl
+S	contains	{tomato,onion}
+M	pick-and-place
+O	mixing bowl
+S	contains	{tomato,onion,cucumber}
+O	cucumber
+S	diced
+S	in	[mixing bowl]
+//
+O	cutting board
+S	contains	{sweet pepper}
+O	sweet pepper
+S	cubed
+S	in	[cutting board]
+O	cutting board
+S	contains	{green pepper}
+O	green pepper
+S	cubed
+S	in	[cutting board]
+O	mixing bowl
+S	contains	{tomato,onion,cucumber}
+M	pick-and-place
+O	mixing bowl
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper}
+O	sweet pepper
+S	cubed
+S	in	[mixing bowl]
+O	green pepper
+S	cubed
+S	in	[mixing bowl]
+//
+O	bowl
+S	contains	{oregano}
+O	oregano
+S	dried
+S	in	[bowl]
+O	mixing bowl
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper}
+M	pour
+O	mixing bowl
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano}
+O	oregano
+S	dried
+S	in	[mixing bowl]
+//
+O	mixing bowl
+S	contains	{flour,salt}
+O	bowl
+S	contains	{olive oil}
+O	olive oil
+S	liquid
+S	in	[bowl]
+M	pour
+O	mixing bowl
+S	contains	{flour,olive oil,salt}
+O	olive oil
+S	liquid
+S	in	[mixing bowl]
+//
+O	mixing bowl
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt}
+O	lemon
+S	halved
+O	fork
+M	squeeze
+O	mixing bowl
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon}
+O	lemon
+S	juice
+S	in	[mixing bowl]
+//
+O	bowl
+S	empty
+O	bottle
+S	contains	{olive oil}
+O	olive oil
+S	liquid
+S	in	[bottle]
+M	pour
+O	bowl
+S	contains	{olive oil}
+O	olive oil
+S	liquid
+S	in	[bowl]
+//
+O	container
+S	contains	{feta cheese}
+O	feta cheese
+S	cubed
+S	in	[container]
+O	spoon
+S	empty
+M	scoop
+O	spoon
+S	contains	{feta cheese}
+O	feta cheese
+S	cubed
+S	in	[spoon]
+//
+O	mixing bowl
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon,olive oil}
+O	olive oil
+S	liquid
+S	in	[mixing bowl]
+O	lemon
+S	juice
+S	in	[mixing bowl]
+O	salt
+S	granulated
+S	in	[mixing bowl]
+O	black olive
+S	whole
+S	in	[mixing bowl]
+O	oregano
+S	dried
+S	in	[mixing bowl]
+O	sweet pepper
+S	cubed
+S	in	[mixing bowl]
+O	green pepper
+S	cubed
+S	in	[mixing bowl]
+O	cucumber
+S	diced
+S	in	[mixing bowl]
+O	onion
+S	sliced
+S	in	[mixing bowl]
+O	tomato
+S	cubed
+S	in	[mixing bowl]
+O	spoon
+S	empty
+M	mix
+O	salad
+S	mixed
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon,olive oil}
+S	in	[mixing bowl]
+//
+O	bowl
+S	contains	{olive oil}
+O	olive oil
+S	liquid
+S	in	[bowl]
+O	mixing bowl
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon}
+M	pour
+O	mixing bowl
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon,olive oil}
+//
+O	mixing bowl
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon,olive oil}
+O	salad
+S	mixed
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon,olive oil}
+S	in	[mixing bowl]
+O	spoon
+S	contains	{feta cheese}
+O	feta cheese
+S	cubed
+S	in	[spoon]
+M	pour
+O	mixing bowl
+S	contains	{salad}
+O	greek salad
+S	mixed
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon,olive oil,feta cheese}
+S	in	[mixing bowl]
+O	salad
+S	mixed
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon,olive oil,feta cheese}
+S	in	[mixing bowl]
+//

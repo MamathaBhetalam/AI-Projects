@@ -1,0 +1,17 @@
+//
+O	bowl
+S	contains	{ice}
+O	ice
+S	frozen
+S	crushed
+S	in	[bowl]
+O	drinking glas
+S	empty
+M	pick-and-place
+O	drinking glas
+S	contains	{ice}
+O	ice
+S	frozen
+S	crushed
+S	in	[drinking glass]
+//

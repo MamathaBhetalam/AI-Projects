@@ -1,0 +1,19 @@
+//
+O	drinking glas
+S	empty
+O	bucket
+S	contains	{ice}
+O	ice
+S	crushed
+S	frozen
+S	in	[bowl]
+O	measuring cup
+S	empty
+M	scoop and pour
+O	drinking glas
+S	contains	{ice}
+O	ice
+S	crushed
+S	frozen
+S	in	[drinking glass]
+//
